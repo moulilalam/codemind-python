@@ -1,6 +1,6 @@
-a=int(input())
-for i in range(1,a+1):
-    if a==i**2:
+n=int(input())
+for i in range(n):
+    if n==i*i:
         print('True')
         break
 else:
