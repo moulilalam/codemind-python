@@ -1,11 +1,12 @@
+def pd(n):
+    s=0
+    for i in range(1,n):
+        if n%i==0:
+            s+=i
+    return s
 a=int(input())
 b=int(input())
-c=0
-for i in range(1,a):
-    if a%i==0:
-        c=c+i
-        
-if c==b:
-    print('Amicable')
+if pd(a)==b and pd(b)==a:
+    print("Amicable")
 else:
-    print('Not Amicable')
+    print("Not Amicable")
