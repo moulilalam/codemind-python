@@ -1,19 +1,14 @@
-a=int(input())
-c=sum=0
-temp=a
-s=a
-while a>0:
-    d=a%10
-    c=c+1
-    a=a//10
-while temp>0:
-    d=temp%10
-    d=d**c
-    c-=1
-    sum=sum+d
-    temp=temp//10
-if sum==s:
-    print('True')
+def ds(n):
+    s=0
+    i=len(str(n))
+    while n>0:
+        r=n%10
+        s+=r**i
+        i-=1
+        n//=10
+    return s
+n=int(input())
+if ds(n)==n:
+    print(True)
 else:
-    print('False')
-    
+    print(False)
