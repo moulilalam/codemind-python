@@ -19,3 +19,4 @@ for i in range(t):
         print(f)
     else:
         print(b)
+    
