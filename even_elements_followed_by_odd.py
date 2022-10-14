@@ -12,3 +12,4 @@ for i in range(n):
         oi+=1
 print(*e,end=" ")
 print(*o)
+    
