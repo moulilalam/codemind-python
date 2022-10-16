@@ -8,4 +8,3 @@ for i in s:
             c+=1
     l.append(c)
 print(l.count(max(l)))
-   
